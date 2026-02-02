@@ -1,0 +1,6 @@
+@SchoolInventory.API_HostAddress = http://localhost:5012
+
+GET {{SchoolInventory.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
