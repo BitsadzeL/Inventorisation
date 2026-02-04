@@ -12,7 +12,7 @@ public class ItemStatusHistory
     public int ChangedByEmployeeId { get; set; }
     public string? Reason { get; set; }
 
-    // Navigation Properties
+    
     public Item Item { get; set; } = null!;
     public Employee ChangedBy { get; set; } = null!;
 }

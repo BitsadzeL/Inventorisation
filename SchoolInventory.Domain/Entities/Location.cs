@@ -13,7 +13,7 @@ namespace SchoolInventory.Domain.Entities
         public string? Building { get; set; }
         public string? Floor { get; set; }
 
-        // Navigation property
+        
         public ICollection<Item> Items { get; set; } = new List<Item>();
     }
 }

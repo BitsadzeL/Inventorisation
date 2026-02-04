@@ -12,16 +12,16 @@ public class Item
     public decimal PurchasePrice { get; set; }
     public ItemStatus Status { get; set; }
 
-    // Foreign Keys
+    
     public int CategoryId { get; set; }
     public int LocationId { get; set; }
 
-    // Navigation Properties
+    
     public Category Category { get; set; } = null!;
     public Location Location { get; set; } = null!;
     public ICollection<ItemStatusHistory> StatusHistory { get; set; } = new List<ItemStatusHistory>();
 
-    // Audit fields
+    
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }
 }
